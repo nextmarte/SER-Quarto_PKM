@@ -1,0 +1,89 @@
+---
+title: "Aplicando framework Seek-Sense-Share com o Quarto"
+author: "Chat-GPT 3.5"
+affiliation: "OPEN AI"
+format:
+  elsevier-pdf:
+    journal:
+      cite-style: number
+    include-in-header: 
+      text: |
+        \newpageafter{author}
+editor: visual
+bibliography: references.bib
+---
+
+```{r}
+#| include: FALSE
+#| echo: FALSE
+library(tidyverse)
+library(kableExtra)
+```
+
+# Introdução {#sec-introdução}
+
+O objetivo deste artigo é demonstrar como a aplicação do framework "Seek-Sense-Share"[@theseek] pode ser realizada no Quarto [@quarto], uma plataforma de Personal Knowledge Management (PKM) que ajuda indivíduos a gerenciar e compartilhar informações de forma eficiente.
+
+# Seek
+
+A primeira etapa do framework "Seek-Sense-Share" é a busca por informações relevantes. No contexto do Quarto, essa busca pode ser realizada através da importação de arquivos, bancos de dados ou websites. Por exemplo, vamos importar um conjunto de dados de informações sobre carros do pacote ggplot2, que está disponível no tidyverse. Podemos utilizar a função data() para carregar o conjunto de dados:
+
+```{r}
+#| label: tbl-mpg
+#| tbl-cap: "tbl mpg"
+kable(head(mpg))
+```
+
+Observe que o comando head(mpg) é utilizado para verificar as primeiras linhas do conjunto de dados e garantir que ele foi carregado corretamente.
+
+Veja a @tbl-mpg
+
+# Sense
+
+A etapa "Sense" envolve a interpretação e organização das informações coletadas na etapa anterior. No Quarto, podemos utilizar as funcionalidades de edição, organização e anotação de documentos para estruturar as informações coletadas e facilitar o processo de criação.
+
+Vamos utilizar o pacote dplyr do tidyverse para filtrar as informações do conjunto de dados de carros de acordo com um determinado critério, por exemplo, carros com alta economia de combustível. Para isso, vamos criar uma nova tabela com apenas os carros que têm um consumo de combustível acima da média.
+
+```{r}
+df_filtrado <- mpg %>% 
+  filter(cty > mean(cty))
+head(df_filtrado)
+
+```
+
+Observe que utilizamos a função filter() do dplyr para selecionar apenas as linhas do conjunto de dados que atendem ao nosso critério.
+
+# Share
+
+A etapa "Share" envolve o compartilhamento do conhecimento criado. No Quarto, podemos exportar e compartilhar documentos criados, bem como análises e visualizações de dados criadas com linguagens de programação como R e Python.
+
+Vamos utilizar o pacote ggplot2 para criar um gráfico de dispersão que mostre a relação entre o consumo de combustível na cidade (cty) e na estrada (hwy) dos carros selecionados.
+
+```{r}
+ggplot(df_filtrado, aes(x = cty, y = hwy)) +
+  geom_point() +
+  labs(title = "Relação entre consumo de combustível na cidade e na estrada", 
+       x = "Consumo na cidade (milhas por galão)", 
+       y = "Consumo na estrada (milhas por galão)")
+```
+
+Observe que o gráfico criado pode ser exportado e compartilhado em diferentes formatos, como PDF, imagem ou HTML.
+
+# Equações
+
+Também é possível usar referências cruzadas em equações
+
+$$ 
+  f_{X}(x) = \left(\frac{\alpha}{\beta}\right)
+  \left(\frac{x}{\beta}\right)^{\alpha-1}
+  e^{-\left(\frac{x}{\beta}\right)^{\alpha}}; 
+  \alpha,\beta,x > 0 .
+$$ {#eq-form}
+
+# Conclusão
+
+Em suma, a gestão eficiente de conhecimento é essencial para a produtividade e inovação em diversos setores, desde a pesquisa acadêmica até a indústria e os negócios. A abordagem Seek-Sense-Share proposta por Jarold Harsh oferece uma estrutura sólida para o gerenciamento de informações e criação de conhecimento útil e aplicável.
+
+O Quarto, por sua vez, é uma plataforma de PKM que pode ajudar os usuários a implementar essa abordagem na prática. Com suas ferramentas de importação, organização, anotação e exportação de informações, o Quarto permite que os usuários gerenciem seus conhecimentos de forma eficiente e os compartilhem com colegas e colaboradores de forma simples e intuitiva.
+
+Combinando a abordagem Seek-Sense-Share com o Quarto, é possível criar um ambiente de colaboração e inovação que pode levar a resultados significativos em diversos campos. Seja você um pesquisador, um empresário ou um estudante, o Quarto pode ser uma ferramenta poderosa para ajudá-lo a gerenciar seu conhecimento e criar soluções inovadoras para problemas complexos.
