@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#sec-sobre-mim",
+    "href": "index.html#sec-sobre-mim",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "Sobre mim",
+    "text": "Sobre mim\n\n\n\n\nBacharel em Administração pela Universidade Federal Fluminense\nAluno do mestrado acadêmico em admnistração PPGAd-UFF\n\nmarcusantonio@id.uff.br \nnextmarcus \nnextmarte"
+  },
+  {
+    "objectID": "index.html#sec-quarto",
+    "href": "index.html#sec-quarto",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "Quarto",
+    "text": "Quarto\n\nO que é o Quarto?E tem mais…\n\n\n\nO Quarto é um sistema de publicação técnico-científica baseado em pandoc e markdown, proposto pela POSIT com o objetivo de unir texto e código para produzir diversos tipos de documentos como:\n\n\nrelatórios dinâmicos;\npáginas web;\nposts de blogs;\nlivros, artigos científicos, apresentações e muito mais.\n\n\n\n\n\n\n\nEle é um sistema que suporta diversas linguagens de programação como R, Python, Julia e ObservableJs.\nÉ versátil e por isso pode ser usado como uma das ferramentas de um sistema de PKM."
+  },
+  {
+    "objectID": "index.html#sec-o-que-é-pkm",
+    "href": "index.html#sec-o-que-é-pkm",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "O que é PKM?!",
+    "text": "O que é PKM?!\n\nPKM significa Personal Knowledge Management, ou Gestão do conhecimento pessoal.\nÉ o processo de gerenciar e organizar informações, conhecimento e experiências para aprimorar a tomada de decisões, a criatividade e a inovação.\nO framework “Seek &gt; Sense &gt; Share” criado por Harold Jarche, é um modelo de PKM que envolve três etapas: busca de informação, interpretação e compartilhamento de conhecimento."
+  },
+  {
+    "objectID": "index.html#sec-o-quarto-como-ferramenta-de-pkm",
+    "href": "index.html#sec-o-quarto-como-ferramenta-de-pkm",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "O Quarto como ferramenta de PKM",
+    "text": "O Quarto como ferramenta de PKM\n\nDiversas funcionalidades que conversam com os objetivos do PKM.\nPermite a criação de documentos, anotações, tabelas, gráficos e visualizações de dados.\nAlém disso, pode ser utilizado com linguagens de programação como R e Python, possibilitando a automatização de tarefas e a análise de dados."
+  },
+  {
+    "objectID": "index.html#sec-o-framework-seek---sense---share-no-quarto",
+    "href": "index.html#sec-o-framework-seek---sense---share-no-quarto",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "O framework “Seek - Sense - Share no Quarto”",
+    "text": "O framework “Seek - Sense - Share no Quarto”\n\nSeekSenseShare\n\n\n\n\nO “Seek” envolve a busca e coleta de informações relevantes para a criação de novas ideias. No Quarto, é possível usar scripts em diversas linguagens, permitindo importar dados das mais diversas fontes e tipos.\n\n\n\n\n\n\nO “Sense” envolve a absorção de informações e criação de novas ideias a partir dessa base. No Quarto, as funcionalidades de edição e organização ajudam a estruturar as informações coletadas e facilitar o processo de criação do conhecimento, conectando texto e código em documentos dinâmicos por exemplo.\n\n\n\n\n\n\nO “Share” envolve o compartilhamento do conhecimento criado. No Quarto, é possível exportar e compartilhar documentos criados, bem como análises e visualizações de dados para diversos tipos de mídia como livros, artigos, blogs, apresentações, etc…"
+  },
+  {
+    "objectID": "index.html#sec-primeiros-passos-no-quarto-com-rstudio.",
+    "href": "index.html#sec-primeiros-passos-no-quarto-com-rstudio.",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "Primeiros passos no quarto com RStudio.",
+    "text": "Primeiros passos no quarto com RStudio.\n\n\n\nRequisitos:\nTer o R, RStudio instalados e Instalar o Quarto CLI para usar comandos para instalar templates de documento ou renderizar documentos usando linha de comando por exemplo."
+  },
+  {
+    "objectID": "index.html#sec-criando-um-documento-quarto",
+    "href": "index.html#sec-criando-um-documento-quarto",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "Criando um documento quarto",
+    "text": "Criando um documento quarto\n\n\nClique em File &gt;&gt; New File &gt;&gt; Quarto document \n\nEscolha o tipo de documento e preencha os campos de título e autor"
+  },
+  {
+    "objectID": "index.html#sec-estrutura-básica-de-um-documento-e-interface",
+    "href": "index.html#sec-estrutura-básica-de-um-documento-e-interface",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "Estrutura básica de um documento e interface",
+    "text": "Estrutura básica de um documento e interface"
+  },
+  {
+    "objectID": "index.html#sec-metadados",
+    "href": "index.html#sec-metadados",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "Metadados",
+    "text": "Metadados\n\nEstruturaExemplos\n\n\n\n\nEssa é uma das partes mais importantes, principalmente quando pensamos em Seek e Share, pois nessa etapa vamos facilitar ou dificultar o acesso à informações chave do artigo por terceiros depois de publicado.\nEssa parte define:\no tipo do documento\no formato de saída\nas informações autorais, incluindo título, autor, afiliação, resumo, contato, etc…\nElementos estruturais do documento como cores, fontes, tamanhos, etc…\nA maioria das definições de manuscrito podem ser sobreescritas no corpo do documento usando estilos css, HTML ou TEX por exemplo."
+  },
+  {
+    "objectID": "index.html#onde-encontrar-informaçãoseek",
+    "href": "index.html#onde-encontrar-informaçãoseek",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "Onde encontrar informação?(SEEK)",
+    "text": "Onde encontrar informação?(SEEK)\n\nPergunteQuarto.org\n\n\n\nProcure os membros da comunidade\nLeia as referências e procure exemplos"
+  },
+  {
+    "objectID": "index.html#aprenda-fazendo-sense",
+    "href": "index.html#aprenda-fazendo-sense",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "Aprenda fazendo (SENSE)",
+    "text": "Aprenda fazendo (SENSE)\n\nCrie um caderno de pesquisa\nFaça uma apresentação\nEscreva um texto para seu blog\nEscreva um livro"
+  },
+  {
+    "objectID": "index.html#compartilhe-o-que-você-criou-share",
+    "href": "index.html#compartilhe-o-que-você-criou-share",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "Compartilhe o que você criou (Share)",
+    "text": "Compartilhe o que você criou (Share)\n\nReceba feedback dos seus pares\nAprenda com seus erros\nConstrua conhecimento com quem tem menos informação\nVolte ao início"
+  },
+  {
+    "objectID": "index.html#mãos-a-obra",
+    "href": "index.html#mãos-a-obra",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "Mãos a obra!!",
+    "text": "Mãos a obra!!\n\nDepois de finalizar nosso artigo podemos escolher uma grande variedade de opções para compartilhamento."
+  },
+  {
+    "objectID": "index.html#sec-boas-práticas-com-pkm",
+    "href": "index.html#sec-boas-práticas-com-pkm",
+    "title": "O Quarto como ferramenta de PKM para pesquisa científica",
+    "section": "Boas práticas com PKM",
+    "text": "Boas práticas com PKM\n\nSeekSenseShare\n\n\n\nPrefira dados abertos sempre que possível para facilitar a reprodução do código apresentado no trabalho.\nUse ferramentas como Zotero e Mendeley integrados ao RStudio para gerenciar sua bibliografia.\nOrganize seus scripts e outros arquivos em uma pasta específica do seu projeto.\nProcure templates que se encaixem no seu objetivo ou crie novos.\n\n\n\n\nUse referências cruzadas para manter a coesão\nComente todas as etapas do seu documento e dos seus scripts\nEvite criar muitos chunks de código entre os textos\nOrganize seu documento para gerar insights e conectar idéias\nUse o github para trabalhar de forma colaborativa e revisar seu trabalho\nUse a opção freeze no YML para evitar recomputação\n\n\n\n\nPergunte a opinião dos seus pares sobre sua produção\nCompartilhe o que você aprendeu enquanto desenvolvia seu trabalho\nNão tenha medo de mostrar sesus resultados\nErrar faz parte do processo de construção do conhecimento"
+  }
+]
